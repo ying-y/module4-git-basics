@@ -1,24 +1,24 @@
 # Exercise-1
 
-The purpose of this exercise is to practice the steps you'll need to use in future exercises. We'll begin by configuring your GitHub account for your machine (which you'll only need to do once), and then move through the steps of working with Git and GitHub (which will soon become second nature).
+The purpose of this exercise is to practice the steps you'll need to use in future exercises. This will repeat some of the steps from the module tutorial itself, but it's good practice!
 
 1. If you haven't already, configure your name and email address for your GitHub account using the terminal.
 
   ```bash
-  # Set your name
-  git config --global user.name "YOUR NAME"
+  # enter your full name (without the dashes)
+  git config --global user.name "your-full-name"
 
-  # Set GitHub email - make sure it matches your account online
-  git config --global user.email "YOUR EMAIL"
+  # enter your email address (the one associated with your GitHub account)
+  git config --global user.email "your-email-address"
   ```
 
-2. Fork this repository (`info-201/m4-git-intro`) to your own GitHub account by clicking the `fork` button on the GitHub interface.
+2. Fork this repository (`info201-w17/module4-git-basics`) to your own GitHub account by clicking the `fork` button on the GitHub interface.
 
   ```bash
   #  Click the `fork` button to fork it to your account
   ```
 
-3. Using your terminal, clone **your forked repository** to your machine (make sure you're in the desired directory on your terminal)
+3. Using the terminal, clone **your forked repository** to your machine (make sure you're in the desired directory on your terminal)
 
   ```bash
   # Enter a desired directory
@@ -27,7 +27,7 @@ The purpose of this exercise is to practice the steps you'll need to use in futu
   #  Get the URL by clicking the "Clone or Download" button on GitHub, then clicking the clipboard icon
 
   # Clone the repository
-  git clone https://github.com/YOUR-USER-NAME/m4-git-intro
+  git clone https://github.com/YOUR-USER-NAME/module4-git-basics
   ```
 
 4. On your machine, open up this file (`exercise-1/README.md`) in a text editor of your choice
@@ -36,25 +36,30 @@ The purpose of this exercise is to practice the steps you'll need to use in futu
   # Open up the file
   ```
 
-5. In the `README.md` file, make an ordered list of what you ate for breakfast today
+5. In the `README.md` file, below these instructions, add an ordered list of what you ate for breakfast today
 
-  ```
+  ```markdown
   1. Coffee
-  2. Banana
+  2. Milk
   3. Cheerios
+  4. Coffee
+  5. Banana
+  6. Coffee
+  7. Coffee
   ```
 
 6. Using your terminal, add and commit the changes you've made to your repository
 
   ```bash
   # Make sure that you're in the cloned repository
-  cd m4-git-intro
+  pwd
+  cd module4-git-basics
 
   # Add changes from all files in the repository
   git add .
 
   # Commit changes making sure to include a descriptive message
-  git commit -m "DESCRIPTIVE MESSAGE HERE"
+  git commit -m "Adds breakfast"
   ```
 
 7. Push changes up to GitHub
@@ -63,3 +68,5 @@ The purpose of this exercise is to practice the steps you'll need to use in futu
   # Push changes
   git push origin master
   ```
+
+---

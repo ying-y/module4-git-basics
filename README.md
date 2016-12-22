@@ -22,7 +22,6 @@ This module will introduce you to `git` command-line program and the GitHub clou
   - [Committing](#committing)
     - [Commit Message Etiquette](#commit-message-etiquette)
   - [Commit History](#commit-history)
-  - [The `.gitignore` File](#the-gitignore-file)
   - [Reviewing the Process](#reviewing-the-process)
     - [Practice](#practice)
 - [GitHub and Remotes](#github-and-remotes)
@@ -206,28 +205,8 @@ git log [--oneline]
 This will give you a list of the _sequence_ of commits you've made: you can see who made what changes and when. (We use the term **HEAD** to refer to the most recent commit). The optional `--oneline` option gives you a nice compact version. Note that each commit is listed with its [SHA-1](https://en.wikipedia.org/wiki/SHA-1) hash (the random numbers and letters), which we use to identify each commit.
 
 
-### The `.gitignore` File
-Sometimes you want git to always ignore particular directories or files in your project. For example, if you use a Mac and you tend to organize your files in the Finder, the operating system will create a hidden file in that folder named `.DS_Store` (the leading dot makes it "hidden") to track the positions of icons, which folders have been "expanded", etc. This file will likely be different from machine to machine. If it is added to your repository and you work from multiple machines (or as part of a team), it could lead to a lot of merge conflicts (not to mention cluttering up the folders for Windows users).
-
-You can tell git to ignore files like these by creating a special _hidden_ file in your project directory called `.gitignore` (note the leading dot). This file contains a list of files or folders that git should "ignore" and pretend don't exist. The file uses a very simple format: each line should list a directory or file path to ignore. For example:
-
-```bash
-# Mac system file; the leading # marks a comment
-.DS_Store
-
-# example: don't check in passwords or ssl keys!
-secret/my_password.txt
-
-# example: don't include large files or libraries
-movies/my_four_hour_epic.mov
-```
-
-You should create a `.gitignore` file to practice saving changes to git. Using your preferred text editor, create a new file called `.gitignore` _directly inside_ your repo. Add `.DS_Store` to the ignore file by just listing the file name.
-
-Run `git status` to see what your repo's status is now. Then `add` and `commit` your new `.gitignore` file (with an appropriate commit message!) and check the status again.
-
 ### Reviewing the Process
-This cycle of "edit files", "add files", "commit changes" is the standard "development loop" when working with git. 
+This cycle of "edit files", "add files", "commit changes" is the standard "development loop" when working with git.
 
 ![Local git process](img/local-process.gif)
 
@@ -248,7 +227,7 @@ Now that you've gotten the hang of git, let's talk about GitHub. [GitHub](https:
 
 - The relationship between git and GitHub is the same as that between your camera and Imgur: **git** is the program we use to create and manage repositories; GitHub is simply a website that stores these repositories. So we use git, but upload to/download from GitHub.
 
-Repositories stored on GitHub are examples of **remotes**: other repos that are linked to your local one. Each repo can have multiple remotes, and you can synchronize commits between them. 
+Repositories stored on GitHub are examples of **remotes**: other repos that are linked to your local one. Each repo can have multiple remotes, and you can synchronize commits between them.
 
 - Each remote has a URL associated with it (where on the Internet the remote copy of the repo can be found), but they are given "alias" names (like browser bookmarks). Traditionally, the remote repo stored on GitHub's servers is named **`origin`**, since it tends to be the "origin" of any code you've started working on.
 
@@ -263,14 +242,14 @@ Start by visiting [**https://github.com/joelwross/github_practice**](https://git
 
 Just like with Imgur or Flickr or other image-hosting sites, each GitHub user has their own account under which repos are stored. The repo linked above is under my user account (`joelwross`). And because it's under my user account, you won't be able to modify it&mdash;just like you can't change someone else's picture on Imgur. So the first thing you'll need to do is copy the repo over to _your **own** account on GitHub's servers_. This process is called **forking** the repo (you're creating a "fork" in the development, splitting off to your own version).
 
-- To fork a repo, click the **"Fork"** button in the upper-right of the screen: 
+- To fork a repo, click the **"Fork"** button in the upper-right of the screen:
 
-    ![Fork button](img/fork-button.png) 
+    ![Fork button](img/fork-button.png)
 
     This will copy the repo over to your own account, so that you can upload and download changes to it!
-    
+
     **Note:** You will be forking repos for class/lab exercises, but _not_ for homework assignments (see below)
-    
+
 Now that you have a copy of the repo under your own account, you need to download it to your machine. We do this by using the `clone` command:
 
 ```bash
@@ -321,7 +300,7 @@ And that's really about it!
 
 
 ## Course Assignments on GitHub
-While class and lab work will use the "fork and clone" workflow described above, homework assignments will work slightly differently. Assignments in this course are configured using GitHub Classroom, which provides each student _private_ repo (under the `info201-w17` account) for the assignment. 
+While class and lab work will use the "fork and clone" workflow described above, homework assignments will work slightly differently. Assignments in this course are configured using GitHub Classroom, which provides each student _private_ repo (under the `info201-w17` account) for the assignment.
 
 Each assignment description in Canvas contains a link to create an assignment repo: click the link and then **accept the assignment** in order to create your own code repo. Once the repository is created, you should **`clone`** it to your local machine to work. **DO NOT FORK YOUR ASSIGNMENT REPO**.
 

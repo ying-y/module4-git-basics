@@ -86,7 +86,7 @@ In short: GitHub is a site that provides as a central authority (or clearing-hou
 ## Installation & Setup
 This module will walk you through all the commands you'll need to do version control with git. It is written as a "tutorial" to help you practice what you're reading!
 
-If you haven't yet, the first thing you'll need to do is [install git](http://git-scm.com/downloads). You should already have done this as part of [module 1](https://github.com/info201-w17/module1-setup).
+If you haven't yet, the first thing you'll need to do is [install git](http://git-scm.com/downloads). You should already have done this as part of [module 1](../../../module1-setup).
 
 You'll need [configure](https://help.github.com/articles/set-up-git/) the installation, telling git who you are so you can commit changes to a repository. You can do this by using the `git` command with the `config` option (e.g., running the `git config` command):
 
@@ -300,7 +300,7 @@ And that's really about it!
 
 
 ## Course Assignments on GitHub
-While class and lab work will use the "fork and clone" workflow described above, homework assignments will work slightly differently. Assignments in this course are configured using GitHub Classroom, which provides each student _private_ repo (under the `info201-w17` account) for the assignment.
+While class and lab work will use the "fork and clone" workflow described above, homework assignments will work slightly differently. Assignments in this course are configured using GitHub Classroom, which provides each student _private_ repo (under the class account) for the assignment.
 
 Each assignment description in Canvas contains a link to create an assignment repo: click the link and then **accept the assignment** in order to create your own code repo. Once the repository is created, you should **`clone`** it to your local machine to work. **DO NOT FORK YOUR ASSIGNMENT REPO**.
 

@@ -21,3 +21,14 @@ The purpose of this exercise is to practice the steps you'll need to use in futu
 
 
 7. Push changes up to GitHub
+
+
+What I ate for this breakfast:
+
+1. bread
+
+2. milk
+
+3. egg
+
+4. cereals
